@@ -42,9 +42,9 @@ if __name__ == '__main__':
     
     print("Bottleneck_model successfully extracted!\n")
 
-    # 0 = Train, 1 = Test Images (Mixed Single), 2 = Test Images (Mixed Double), 3 = Test Video
+    # 0 = Train, 1 = Test Images (Mixed Single), 2 = Test Images (Mixed Double), 3 = Test Images (Spatial), 4 = Test Video
     session = int(input("Session: ")) 
-    if (session == 3):
+    if (session == 4):
         filename = input('Video Filename: ')
         cap = cv2.VideoCapture(p.testDir3 + filename +'.mp4')
     else:
@@ -76,7 +76,7 @@ if __name__ == '__main__':
         start_time = time.time()
         
         # Read the frames      
-        if (session < 3):
+        if (session < 4):
             ### This Part is for Training Session and Test Images
             imgFile = input("Input Image: ")
             if (imgFile == 'done'):
@@ -88,7 +88,8 @@ if __name__ == '__main__':
                 frame = cv2.imread(p.testDir1 + imgFile +'.png')
             elif (session == 2):
                 frame = cv2.imread(p.testDir2 + imgFile + '.png')
-
+            elif (session == 3):
+                frame = cv2.imread(p.testDir4 + imgFile + '.png')
             ret = True
         else:
             ret, frame = cap.read()
