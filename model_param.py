@@ -10,15 +10,16 @@ import os
 
 
 # Checkpoints Directory
-LoadDir = "C:/Users/Rivan/Desktop/ptamarix/checkpoints/"
+LoadDir = "C:/Users/Rivan/Desktop/Source Code/checkpoints/"
 
 # Train Directory
-trainDir = "C:/Users/Rivan/Desktop/Experiments/Train Images (Color)/"
+trainDir = "C:/Users/Rivan/Desktop/Source Code/evaluation/Train Images (Color)/"
 
 # Test Directory
-testDir1 = "C:/Users/Rivan/Desktop/Experiments/Test Images (Mixed Single)/"
-testDir2 = "C:/Users/Rivan/Desktop/Experiments/Test Images (Mixed Double)/"
-testDir3 = "C:/Users/Rivan/Desktop/Experiments/Test Videos/"
+testDir1 = "C:/Users/Rivan/Desktop/Source Code/evaluation/Test Images (Mixed Single)/"
+testDir2 = "C:/Users/Rivan/Desktop/Source Code/evaluation/Test Images (Mixed Double)/"
+testDir3 = "C:/Users/Rivan/Desktop/Source Code/evaluation/Test Videos/"
+testDir4 = "C:/Users/Rivan/Desktop/Source Code/evaluation/Test Images (Spatial)/"
 
 frame_size = img_size = (32,32,3)
 
